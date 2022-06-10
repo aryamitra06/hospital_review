@@ -1,0 +1,138 @@
+:root {
+    --text-color: #545454;
+}
+
+.hero{
+    height: 420px;
+    background-color: #D1EAFB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Hero_wrapper{
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero_info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 8.5rem; */
+}
+
+.hero_info h1{
+    color: var(--text-color);
+    font-size: 3rem;
+    font-weight: 400;
+    width: 43rem;
+    line-height: 3.4rem;
+    margin-bottom: 2rem;
+}
+
+.hero_img img{
+    /* margin-right: 8.5rem; */
+    width: 30rem;
+}
+
+.hero_info_details input{
+    background-color: #fff;
+    border: 0px solid;
+    height: 4rem;
+    width: 26rem;
+    border-radius:20px 0 0 20px;
+}
+
+.hero_info_details input[type=text]{
+    font-size: 1.5rem;
+    padding: 1.5rem 0.2rem 1.5rem 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hero_info_details input:focus{
+    outline: none;
+}
+
+.hero_info_details input::placeholder{
+    top: 0;
+    margin-left:10px;
+    color: #a8a8a8;
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hero_input{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.submit_btn{
+    cursor: pointer;
+    display: inline-block;
+    border: none;
+    background-color: #fff;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 0 20px 20px 0;
+}
+
+.submit_btn i{
+    transform: scale(1.5);
+}
+
+@media screen and (max-width: 650px){
+    .hero{
+        height: 300px;
+    }
+    
+    .hero_info{
+        margin-left: 0rem;
+    }
+    
+    .hero_info h1{
+        font-size: 1.3rem;
+        text-align: center;
+        width: 100%;
+        line-height: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .hero_img img{
+        display: none;
+    }
+
+    .hero_info_details{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .hero_info_details input{
+        height: 2rem;
+        width: 17rem;
+    }
+    
+    .hero_info_details input[type=text]{
+        font-size: 1rem;
+        padding: 1.3rem 0 1.3rem 1.3rem;
+    }
+
+    .hero_info_details input::placeholder{
+        margin: auto;
+        font-size: 0.8rem;
+    }   
+    
+    .submit_btn{
+        height: 2.6rem;
+        width: 2.5rem;
+    }
+
+    .submit_btn i{
+        transform: scale(1);
+    }
+}

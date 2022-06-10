@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}

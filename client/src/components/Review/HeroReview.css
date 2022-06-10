@@ -1,0 +1,147 @@
+:root {
+    --text-color: #545454;
+}
+
+.heroReview{
+    height: 420px;
+    background-color: #D1EAFB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroReview_wrapper{
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heroReview_info{
+    /* margin-left: 8.5rem; */
+}
+
+.heroReview_info h1{
+    color: var(--text-color);
+    font-size: 2rem;
+    font-weight: 400;
+    width: 40rem;
+    line-height: 3.4rem;
+}
+
+.heroReview_star{
+    width: max-content;
+    transform: scale(1.3);
+    transform-origin: left;
+}
+
+.heroReview_address{
+    margin: 1rem 0 1rem 0;
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+
+.heroReview_img img{
+    /* margin-right: 8.5rem; */
+    width: 30rem;
+}
+
+.heroReview_small-details{
+    margin: 1rem 0 1rem 0;
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+
+.heroReview_call{
+    cursor: pointer;
+    border: none;
+    background-color: #6C63FF;
+    height: 3rem;
+    width: 9rem;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    transition: 0.15s ease-in-out;
+}
+
+.heroReview_call:hover{
+    background-color: #544bff;
+}
+
+@media screen and (max-width: 650px){
+    .heroReview{
+        justify-content: center;
+        width: 100%;
+        height: 300px;
+    }
+
+    .heroReview_wrapper{
+        width: 100vw;
+    }
+    
+    .heroReview_info{
+        margin-left: 0rem;
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    .heroReview_info h1{
+        padding-left: 1.8rem;
+        font-size: 1.5rem;
+        text-align: left;
+        width: 100%;
+        line-height: 2rem;
+        margin-bottom: 0;
+    }
+    
+    .heroReview_img img{
+        display: none;
+    }
+
+    .heroReview_info_details{
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .heroReview_star{
+        position: absolute;
+        top: 2.2rem;
+        left: 1.5rem;
+        max-width: 100%;
+    }
+
+    .heroReview_address{
+        padding-left: 1.8rem;
+        width: 100%;
+        text-align: left;
+        margin: 2.3rem 0 0 0;
+        font-size: 1rem;
+    }
+
+    .heroReview_small-details{
+        padding-left: 1.8rem;
+        padding-right: 1rem;
+        width: 100vw;
+        text-align: left;
+        margin: 1rem 0 1rem 0rem;
+        font-size: 1rem;
+    }
+    
+    .heroReview_call{
+        border: none;
+        background-color: #6C63FF;
+        height: 3rem;
+        width: 85%;
+        border-radius: 20px;
+        font-size: 1rem;
+        font-weight: 600;
+        color: #fff;
+        font-family: 'Montserrat', sans-serif;
+    }
+}

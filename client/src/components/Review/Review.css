@@ -1,0 +1,281 @@
+:root {
+    --text-color: #545454;
+}
+
+.Review_wrapper{
+    height: max-content;
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Review_overview{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Reviews{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Review_main{
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Review_main_details{
+    background-color: #F5F5F5;
+    border-radius: 20px;
+    height: max-content;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.Reviews_header{
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.add_review{
+    cursor: pointer;
+    border: none;
+    background-color: #6C63FF;
+    height: 3rem;
+    width: 9rem;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    transition: 0.15s ease-in-out;
+}
+
+.add_review:hover{
+    background-color: #544bff;
+}
+
+.Review_user_name{
+    padding: 0;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+
+.Review_user{
+    width: 75vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.Review_user_details{
+    height: max-content;
+    width: 22rem;
+    flex-direction: row;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.Review_user_image{
+    object-fit: cover;
+    height: 45px;
+    width: 45px;
+    background-color: lightcoral;
+    border-radius: 50%;
+    margin-right: 0.8rem;
+}
+
+.Review_user_image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.Review_visited{
+    padding: 0;
+    margin: 0;
+    width: 17rem;
+    word-wrap: no-wrap;
+}
+
+.User_details{
+    position: relative !important;
+}
+
+.Review_time{
+    margin: 0;
+    font-size: 0.8rem;
+    top: 3rem;
+    position: absolute;
+}
+
+.Review_by_user{
+    height: max-content;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    width: 70vw;
+    line-height: 1.8rem;
+}
+
+.Review_paragraph{
+    margin: 0;
+}
+
+.recommend_or_not{
+    height: max-content;
+    width: max-content;
+    padding: 7px;
+    border-radius: 10px;
+    background-color: #C6FFF1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.recommend_or_not p{
+    color: #078a00;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.edit_delete{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    height: 2.5rem;
+    width: 98%;
+}
+
+.edit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #acfb7f;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 3rem;
+    width: 5rem;
+    margin-right: 1rem;
+    transition: 0.3s ease-in-out;
+    border: 2px solid gray;
+}
+
+.edit:hover{
+    background-color: #84e74c;
+}
+
+.edit p{
+    color: var(--text-color);
+    font-weight: 600;
+    margin: 0;
+}
+
+.delete{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff8080;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 3rem;
+    width: 6rem;
+    transition: 0.3s ease-in-out;
+    border: 2px solid gray;
+}
+
+.delete:hover{
+    background-color: #f25858;
+}
+
+.delete p{
+    color: #fff;
+    font-weight: 600;
+    margin: 0;
+}
+
+@media screen and (max-width: 650px){
+    .Review_user{
+        width: 80vw;
+        justify-content: flex-start;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .Review_user_details{
+        width: 100%;
+        flex-direction: row;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Review_user_name{
+        width: 60vw;
+        padding: 0;
+        font-weight: 600;
+        margin-bottom: 0px;
+    }
+
+    .Review_visited{
+        width: 13rem;
+    }
+
+    .recommend_or_not{
+        margin-top: 30px;
+        height: max-content;
+        width: 70vw;
+        padding: 8px;
+        justify-content: center;
+    }
+
+    .recommend_or_not p{
+        font-size: 0.9rem;
+    }
+
+    .Review_by_user{
+        padding: 0;
+        line-height: 1.7rem;
+    }
+
+    .edit_delete{
+        height: 2.5rem;
+        width: 110%;
+        margin-top: 2rem;
+    }
+
+    .edit{
+        border-radius: 10px;
+        cursor: pointer;
+        height: 2.5rem;
+        width: 5rem;
+        margin-right: 1rem;
+    }
+
+    .delete{
+        border-radius: 10px;
+        cursor: pointer;
+        height: 2.5rem;
+        width: 6rem;
+    }
+}
